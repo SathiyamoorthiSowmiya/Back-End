@@ -22,12 +22,12 @@ app.use(express.static('Public'))
 app.use(cors({
     methods: ['GET', 'POST', 'PUT', "DELETE"],
     credentials: true,
-    origin: "http://localhost:5173", 
+    origin: "http://localhost:8000", 
 }));
 
 
-app.use('/',require('./routes/authRoutes'))
-app.use('/',require('./routes/empRoutes'))
+app.use('/',require('./src/authRoutes'))
+app.use('/',require('./src/empRoutes'))
 
 const verifyuser = (req,res,next)=>{
     const token=req.cookies.token;
