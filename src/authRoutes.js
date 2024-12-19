@@ -34,8 +34,8 @@ const {
     trainingMaterial,
     AddtrainingMaterial,
     deleteMaterial,
-} = require("../controllers/authController");
-const { TrainingMaterial } = require("../models/user");
+} = require("../../controllers/authController");
+const { TrainingMaterial } = require("../../models/user");
 
 //Middleware
 router.use(

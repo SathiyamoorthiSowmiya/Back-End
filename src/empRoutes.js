@@ -24,8 +24,8 @@ const {
     getempModule,
     incompleteModule
     
-} = require("../controllers/empController");
-const { empModule } = require("../models/user");
+} = require("../../controllers/empController");
+const { empModule } = require("../../models/user");
 
 router.use(
     cors({
